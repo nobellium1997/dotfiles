@@ -203,7 +203,7 @@ exec slack
 
 exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/nobel/.i3/workspace-1.json'"
 
-for_window [class="^jetbrains-.+"][window_type=dialog] focus
+for_window [class="jetbrains-idea"] focus
 
 for_window [class="^.*"] border pixel 0
 gaps inner 20

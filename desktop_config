@@ -152,6 +152,8 @@ bindsym $mod+r mode "resize"
 workspace 1 output HDMI-A-0
 workspace 2 output DisplayPort-0
 workspace 3 output DisplayPort-1
+workspace 4 output DisplayPort-0
+workspace 5 output HDMI-A-0
 workspace 10 output DisplayPort-1
 workspace 9 output DisplayPort-1
 
@@ -166,10 +168,10 @@ set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+client.focused          #a9a9a9           #a9a9a9          $text-color          #a9a9a9
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color $inactive-bg-color
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color $inactive-bg-color
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $inactive-bg-color
 
 hide_edge_borders both
 
@@ -187,7 +189,7 @@ bar {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
 }
-
+bindsym $mod+n exec qutebrowser
 
 bindsym $mod+x exec ~/.i3/i3lock-fancy-multimonitor/lock -p -n
 bindsym $mod+shift+x exec ~/.i3/i3lock-fancy-multimonitor/lock -p -n && systemctl suspend
@@ -198,16 +200,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle
 
 exec nm-applet
-# exec ckb-next
+exec ckb-next
 exec_always feh --bg-fill ~/Downloads/mac.jpg
 exec compton
 exec ~/.screenlayout/triplemonitor.sh
 exec slack
 
-exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/nobel/.i3/workspace-1.json'"
-
 for_window [class="jetbrains-idea"] focus
 
-for_window [class="^.*"] border pixel 0
-gaps inner 20
-gaps outer 10
+for_window [class="^.*"] border pixel 2
+gaps inner 15

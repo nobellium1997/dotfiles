@@ -6,9 +6,13 @@ set relativenumber
 set ignorecase
 set incsearch
 syntax on
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
 
 call plug#begin('~/.vim/plugged')
 
- Plug 'itchyny/lightline.vim'
+ Plug 'https://github.com/tpope/vim-surround.git'
+ Plug 'https://github.com/tpope/vim-repeat.git'
+ Plug 'junegunn/rainbow_parentheses.vim'
 
 call plug#end()

@@ -1,0 +1,56 @@
+// vim:ts=4:sw=4:et
+{
+    // tabbed split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": 1,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1884,
+               "width": 1068,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Android Messages",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Android\\ Messages$",
+               "instance": "^android\\ messages$",
+               "title": "^Android\\ Messages$",
+               "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1862,
+               "width": 1068,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Messenger",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Caprine$",
+               "instance": "^caprine$",
+               "title": "^Messenger$",
+               "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

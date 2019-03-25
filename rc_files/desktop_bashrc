@@ -148,7 +148,12 @@ alias idea="idea64.exe"
 alias s="ls | grep -i"
 alias ff="find . -type f -iname"
 alias fd="find . -type d -iname"
-
+alias tm="tmux"
+alias tls="tmux ls"
+alias ta="tmux attach"
+alias tks="tmux kill-server"
+alias inst="sudo apt install"
+alias updrc="cp ~/.bashrc /mnt/c/Users/nobel/i3-dotfiles/rc_files/desktop_bashrc && cd /mnt/c/Users/nobel/i3-dotfiles && gcam 'updates to bashrc'"
 
 # git aliases
 alias g="git"

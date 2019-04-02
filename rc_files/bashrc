@@ -152,8 +152,9 @@ alias tm="tmux"
 alias tls="tmux ls"
 alias ta="tmux attach"
 alias tks="tmux kill-server"
-alias inst="sudo apt install"
-alias updrc="cp ~/.bashrc /mnt/c/Users/nobel/i3-dotfiles/rc_files/desktop_bashrc && cd /mnt/c/Users/nobel/i3-dotfiles && gcam 'updates to bashrc'"
+alias ainst="sudo apt install"
+alias arm="sudo apt remove"
+alias updrc="/mnt/c/Users/nobel/i3-dotfiles/update_repo.sh"
 
 # git aliases
 alias g="git"
@@ -166,7 +167,7 @@ alias gcam="git commit -am"
 alias gp="git pull"
 alias gsh="git stash"
 alias gshd="git stash drop"
-
+alias gsu="git status -uno"
 
 # set -o vi
 

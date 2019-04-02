@@ -20,3 +20,6 @@ bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection c
 
 # set focused window to yellow 
 set-window-option -g window-status-current-bg yellow
+
+# hack to get nvim to esacpe in tmux
+set -sg escape-time 0

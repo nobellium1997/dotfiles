@@ -66,7 +66,14 @@ $endif
 
 $endif
 
+set editing-mode vi
 set show-mode-in-prompt on
-set vi-ins-mode-string "<--INSERT-->"
-set vi-cmd-mode-string "<--NORMAL-->"
+set vi-ins-mode-string "(+) "
+set vi-cmd-mode-string "(-) "
+set completion-ignore-case on
+
+$if mode=vi
+	set keymap vi-command
+	"v": forward-char
+$endif
 

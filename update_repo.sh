@@ -1,7 +1,6 @@
 #!/bin/sh 
-cp ~/.bashrc /mnt/c/Users/nobel/i3-dotfiles/rc_files/bashrc
-cp ~/.inputrc /mnt/c/Users/nobel/i3-dotfiles/rc_files/inputrc
-cp ~/.tmux.conf /mnt/c/Users/nobel/i3-dotfiles/configs/tmux_conf
-cd /mnt/c/Users/nobel/i3-dotfiles
+cp ~/.bashrc rc_files/bashrc
+cp ~/.inputrc rc_files/inputrc
+cp ~/.tmux.conf configs/tmux_conf
 git commit -am "updates to rc and configs"
 git push

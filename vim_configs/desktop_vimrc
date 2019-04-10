@@ -1,6 +1,0 @@
-set number
-set relativenumber
-set ignorecase
-set incsearch
-syntax on
-

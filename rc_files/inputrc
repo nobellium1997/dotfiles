@@ -72,6 +72,8 @@ set vi-ins-mode-string "(+) "
 set vi-cmd-mode-string "(-) "
 set completion-ignore-case on
 
+"\C-h": backward-kill-word
+
 $if mode=vi
 	set keymap vi-command
 	"v": forward-char

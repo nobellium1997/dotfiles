@@ -1,0 +1,11 @@
+set noautofocus
+let searchengine y = ["https://youtube.com", "https://www.youtube.com/results?search_query=%s"]
+let searchalias a = "amazon"
+let searchengine gm = "https://www.google.com/maps/search/%s"
+let searchengine r = ["https://reddit.com", "https://reddit.com/r/%s"]
+let searchengine s= ["https://open.spotify.com/browse/featured", "https://open.spotify.com/search/results/%s"]
+map O :open$<Space>
+map T :tabnew$<Space>
+command ms open https://messenger.com
+command td tabdetach
+let blacklists = ["https://mail.google.com/*"]

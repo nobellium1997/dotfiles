@@ -93,7 +93,7 @@ alias cd=cs
 alias refresh="source ~/.bashrc"
 alias cdh="cd /mnt/c/Users/nobel"
 alias update="sudo apt update && sudo apt upgrade -y"
-alias open="cygstart.exe"
+alias open="wsl-open"
 alias erc="vim ~/.bashrc"
 alias b="cd .."
 alias bk="cd -"
@@ -134,3 +134,6 @@ tmux attach &> /dev/null
 # 	    exec tmux
 # fi
 
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+	exec tmux
+fi

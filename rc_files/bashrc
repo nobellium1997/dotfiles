@@ -79,7 +79,7 @@ fi
 cd /mnt/c/Users/nobel
 
 function ld {
-	ls $@ 2> /dev/null
+	ls -X --group-directories-first $@ 2> /dev/null
 }
 
 alias ls=ld

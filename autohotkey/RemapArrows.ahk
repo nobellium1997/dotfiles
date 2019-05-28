@@ -18,3 +18,7 @@ return
 ^!l::
 Send, {Right 1}
 return
+
+!+q::
+WinClose A
+return

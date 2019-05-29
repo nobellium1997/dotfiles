@@ -4,5 +4,7 @@ set smartcase
 set incsearch
 syntax on
 
+colorscheme desert
+
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>

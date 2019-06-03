@@ -22,7 +22,3 @@ return
 !+q::
 WinClose A
 return
-
-!f::
-WinMaximize A
-return

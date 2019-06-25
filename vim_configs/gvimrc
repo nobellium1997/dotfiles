@@ -1,0 +1,22 @@
+set number
+set ignorecase
+set incsearch
+set relativenumber
+set backspace=2
+set wrap
+syntax on
+
+colorscheme slate
+
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
+
+nnoremap <space> i<space><esc>l
+nnoremap J <C-d>
+nnoremap K <C-u>
+
+vnoremap <C-C> "+y
+map <C-V> "+gP
+
+autocmd GUIEnter * simalt ~x
+set guifont=Lucida\ Console:h12

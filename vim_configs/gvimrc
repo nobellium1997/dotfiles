@@ -12,8 +12,10 @@ noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
 nnoremap <space> i<space><esc>l
-nnoremap J <C-d>
-nnoremap K <C-u>
+nnoremap <return> o<esc>
+nnoremap <S-return> O<esc>
+nnoremap J <C-e>
+nnoremap K <C-y>
 
 vnoremap <C-C> "+y
 map <C-V> "+gP

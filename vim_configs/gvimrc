@@ -6,11 +6,13 @@ set backspace=2
 set wrap
 syntax on
 
+let g:EasyMotion_smartcase=1
+
 colorscheme slate
 
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
-noremap! <C-V> <esc>"+gPi
+noremap! <C-V> <esc>"+gPa
 
 nnoremap <space> i<space><esc>l
 nnoremap <return> o<esc>
@@ -23,6 +25,9 @@ nnoremap <C-]> <C-d>
 vnoremap <C-C> "+y
 map <C-V> "+gP
 
+map <A-m> <Plug>(easymotion-bd-f)
+nmap <A-m> <Plug>(easymotion-overwin-f)
+
 autocmd GUIEnter * simalt ~x
 set guioptions+=b 
 set guifont=Lucida\ Console:h12
@@ -30,5 +35,7 @@ set guifont=Lucida\ Console:h12
 call plug#begin('~/.vim/plugged')
 
 Plug 'tomasiser/vim-code-dark'
+
+Plug 'https://github.com/easymotion/vim-easymotion.git'
 
 call plug#end()

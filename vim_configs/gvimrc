@@ -25,8 +25,8 @@ nnoremap <C-]> <C-d>
 vnoremap <C-C> "+y
 map <C-V> "+gP
 
-map <A-m> <Plug>(easymotion-bd-f)
-nmap <A-m> <Plug>(easymotion-overwin-f)
+map <M-m> <Plug>(easymotion-bd-f)
+nmap <M-m> <Plug>(easymotion-overwin-f)
 
 autocmd GUIEnter * simalt ~x
 set guioptions+=b 

@@ -12,7 +12,7 @@ colorscheme slate
 
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
-noremap! <C-V> <esc>"+gPa
+noremap! <C-V> <esc>l"+gPi
 
 nnoremap <space> i<space><esc>l
 nnoremap <return> o<esc>
@@ -25,12 +25,20 @@ nnoremap <C-]> <C-d>
 vnoremap <C-C> "+y
 map <C-V> "+gP
 
+nmap $ g_
+vmap $ g_
+
+nmap <M-[> [m
+nmap <M-]> ]m
+
 map <M-m> <Plug>(easymotion-bd-f)
 nmap <M-m> <Plug>(easymotion-overwin-f)
 
 autocmd GUIEnter * simalt ~x
 set guioptions+=b 
 set guifont=Lucida\ Console:h12
+set guioptions -=m
+set guioptions -=T
 
 call plug#begin('~/.vim/plugged')
 

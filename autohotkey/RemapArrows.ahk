@@ -23,22 +23,6 @@ return
 WinClose A
 return
 
-^!h::
-Send, {Ctrl Down}{Left 1}{Ctrl up}
-return
-
-^!l::
-Send, {Ctrl Down}{Right 1}{Ctrl up}
-return
-
-^!k::
-Send, {End}
-return
-
-^!j::
-Send, {Home}
-return
-
 !f::
 WinMaximize A
 return
